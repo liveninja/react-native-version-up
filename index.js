@@ -84,7 +84,7 @@ const commit = update.then(() => {
   log.info('I want to make a commit with message:', 1);
   log.info(`"${message}"`, 2);
   log.info(`I want to add a tag:`, 1);
-  log.info(`"v${version}"`, 2);
+  log.info(`"RC-${version}"`, 2);
 
   const question = log.info(`Do you allow me to do this? [y/n] `, 1, true);
   const answer = readlineSync.question(question).toLowerCase();
